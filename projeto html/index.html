@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Lateral -->
+    <aside class="menu-lateral">
+        <div class="logo">W M C</div>
+        <nav>
+            <button><i class="fa-solid fa-chart-line"></i></button>
+            <button><i class="fa-solid fa-list-check"></i></button>
+            <button><i class="fa-solid fa-dollar-sign"></i></button>
+            <button><i class="fa-solid fa-chart-bar"></i></button>
+            <button><i class="fa-solid fa-users"></i></button>
+            <button><i class="fa-solid fa-user-plus"></i></button>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Pedidos</h1>
+            <nav class="tabs">
+                <span class="tab ativo">Hoje</span>
+                <span class="tab">Finalizados</span>
+            </nav>
+            <div class="botoes">
+                <a href="novo_pedido.html"><button class="btn verde"><i class="fa-solid fa-plus"></i> Novo pedido</button>
+                </a>
+                <a href="novo_cliente.html"><button class="btn vermelho"><i class="fa-solid fa-plus"></i> Novo cliente</button>
+                </a>
+                <button class="btn azul"><i class="fa-solid fa-plus"></i> Remessa</button>
+            </div>
+        </header>
+
+        <!-- Status de Pedidos -->
+        <section class="status-pedidos">
+            <div class="status amarelo"><i class="fa-solid fa-folder-open"></i> Em aberto</div>
+            <div class="status laranja"><i class="fa-solid fa-cart-arrow-down"></i> Em separação</div>
+            <div class="status azul"><i class="fa-solid fa-clock"></i> Aguardando rota</div>
+            <div class="status verde"><i class="fa-solid fa-bicycle"></i> Em Rota</div>
+        </section>
+    </main>
+</body>
+</html>

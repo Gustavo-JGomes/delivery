@@ -1,0 +1,114 @@
+/* Reset de Página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da Página */
+body {
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+/* Menu Lateral */
+.menu-lateral {
+    width: 40px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px;
+    height: 100vh;
+}
+
+.menu-lateral .logo {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.menu-lateral button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-lateral button:hover {
+    color: #007BFF;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header .tabs {
+    display: flex;
+}
+
+header .tab {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    padding: 5px;
+}
+
+header .tab.ativo {
+    color: black;
+    border-bottom: 3px solid #33cc33;
+}
+
+header .botoes .btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+header .botoes .verde { background-color: #33cc33; }
+header .botoes .vermelho { background-color: #d9534f; }
+header .botoes .azul { background-color: #5bc0de; }
+
+/* Status de Pedidos */
+.status-pedidos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.status-pedidos .status {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.status.amarelo { background-color: #f7c600; }
+.status.laranja { background-color: #ff851b; }
+.status.azul { background-color: #007bff; }
+.status.verde { background-color: #28a745; }

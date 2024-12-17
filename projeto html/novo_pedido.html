@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Pedido</title>
+    <link rel="stylesheet" href="stylenovo_pedido.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título Principal -->
+        <header class="header">
+            <h1>Novo pedidos</h1>
+        </header>
+
+        <!-- Formulário de Entrada de Pedidos -->
+        <form class="pedido-form">
+            <h2>Entrada de pedidos</h2>
+
+            <!-- Número e Tipo de Compra -->
+            <div class="row">
+                <input type="text" placeholder="Nº da compra: 51" class="input-field">
+                <select class="input-field">
+                    <option>Tipo de compra</option>
+                </select>
+            </div>
+
+            <!-- Telefone -->
+            <div class="row">
+                <label for="telefone">Telefone do cliente:</label>
+                <input type="text" id="telefone" placeholder="Telefone" class="input-field telefone">
+            </div>
+
+            <!-- Dados do Cliente -->
+            <div class="row">
+                <input type="text" placeholder="Filial" class="input-field">
+                <input type="text" placeholder="Nome do cliente" class="input-field">
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Endereço" class="input-field long-field">
+                <input type="text" placeholder="QD e LT" class="input-field small-field">
+            </div>
+
+            <!-- Lista do Cliente -->
+            <div class="row">
+                <textarea placeholder="Lista do cliente" class="textarea-field"></textarea>
+            </div>
+
+            <!-- Botão Adicionar -->
+            <div class="button-container">
+                <button type="submit" class="btn-adicionar">Adicionar pedido</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
